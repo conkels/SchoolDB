@@ -53,3 +53,6 @@ CREATE TABLE IF NOT EXISTS studentNeed (
     FOREIGN KEY (studentID) REFERENCES student(studentID),
     FOREIGN KEY (needID) REFERENCES specialNeed(needID)
 );
+
+INSERT INTO student (studentID, fullname, yearGroup, address, emergencyContactPhone, emergencyContactName, emergencyContactRelation)
+VALUES (1, 'Bob Smith', 7, '17 Yellow Road', '07654321234', 'John Smith', 'Father');
